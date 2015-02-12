@@ -104,9 +104,6 @@ describe('simple delete request', function() {
 
               var expected_results = "ENOENT";
               var result = "";
-              //fs.open('./data/notes5.json', 'r', function (err, fd) {
-              //    result = "file does not exist";
-              //});
 
               fs.open('./data/notes5.json', 'r', function (err2, fd){
                 console.log("result in DELETE in notes_test.js")
@@ -146,5 +143,35 @@ describe('simple patch request', function() {
         expect(res.body).to.eql(expected_results);
         done();
       });
+  });
+});
+
+describe('simple get request', function() {
+  it('responds to a get request', function(done) {
+
+    var expected_results = {
+      "id": "6",
+      "name": "tom",
+      "sparkles": "456"
+    };
+
+    console.dir(expected_results);
+
+    chai.request('localhost:3000')
+      .post('/notes/6')
+      .send({"id": 6, "name": "tom", "sparkles" : "456"})
+      .end(function(err, res) {
+
+        chai.request('localhost:3000')
+          .get('/notes/6')
+          .end(function(err, res) {
+            console.dir(res.body);
+            expect(err).to.eql(null);
+            expect(res.body).to.eql(expected_results);
+            done();
+        });
+
+      });
+
   });
 });

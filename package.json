@@ -1,0 +1,36 @@
+{
+  "name": "CFJSA_Feb16_HTTP_Srvr_with_smpl_prsstnc",
+  "version": "0.1.0",
+  "description": "http server with simple persistence",
+  "main": "http_server.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "./node_modules/grunt-cli/bin/grunt"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/StephanieBeaton/CFJSA_Feb16_HTTP_Srvr_with_smpl_prsstnc.git"
+  },
+  "keywords": [
+    "http",
+    "server",
+    "persistence"
+  ],
+  "author": "Stephanie Beaton <stefanybeaton@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/StephanieBeaton/CFJSA_Feb16_HTTP_Srvr_with_smpl_prsstnc/issues"
+  },
+  "homepage": "https://github.com/StephanieBeaton/CFJSA_Feb16_HTTP_Srvr_with_smpl_prsstnc",
+  "devDependencies": {
+    "chai": "^2.0.0",
+    "chai-http": "^1.0.0",
+    "grunt": "^0.4.5",
+    "grunt-cli": "^0.1.13",
+    "grunt-contrib-jshint": "^0.11.0",
+    "grunt-simple-mocha": "^0.4.0",
+    "mocha": "^2.1.0"
+  }
+}

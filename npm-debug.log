@@ -1,0 +1,88 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/home/art/.node/bin/node',
+1 verbose cli   '/home/art/.node/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '--save-dev',
+1 verbose cli   'chaihttp' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.35
+4 verbose readDependencies using package.json deps
+5 verbose cache add [ 'chaihttp', null ]
+6 verbose cache add name=undefined spec="chaihttp" args=["chaihttp",null]
+7 verbose parsed url { protocol: null,
+7 verbose parsed url   slashes: null,
+7 verbose parsed url   auth: null,
+7 verbose parsed url   host: null,
+7 verbose parsed url   port: null,
+7 verbose parsed url   hostname: null,
+7 verbose parsed url   hash: null,
+7 verbose parsed url   search: null,
+7 verbose parsed url   query: null,
+7 verbose parsed url   pathname: 'chaihttp',
+7 verbose parsed url   path: 'chaihttp',
+7 verbose parsed url   href: 'chaihttp' }
+8 silly lockFile 45e02a6c-chaihttp chaihttp
+9 verbose lock chaihttp /home/art/.npm/45e02a6c-chaihttp.lock
+10 silly lockFile 45e02a6c-chaihttp chaihttp
+11 silly lockFile 45e02a6c-chaihttp chaihttp
+12 verbose addNamed [ 'chaihttp', '' ]
+13 verbose addNamed [ null, '*' ]
+14 silly lockFile 0a906b12-chaihttp chaihttp@
+15 verbose lock chaihttp@ /home/art/.npm/0a906b12-chaihttp.lock
+16 silly addNameRange { name: 'chaihttp', range: '*', hasData: false }
+17 verbose request where is /chaihttp
+18 verbose request registry https://registry.npmjs.org/
+19 verbose request id eb1c048442048442
+20 verbose url raw /chaihttp
+21 verbose url resolving [ 'https://registry.npmjs.org/', './chaihttp' ]
+22 verbose url resolved https://registry.npmjs.org/chaihttp
+23 verbose request where is https://registry.npmjs.org/chaihttp
+24 info trying registry request attempt 1 at 09:28:12
+25 http GET https://registry.npmjs.org/chaihttp
+26 http 404 https://registry.npmjs.org/chaihttp
+27 verbose headers { date: 'Thu, 12 Feb 2015 17:28:13 GMT',
+27 verbose headers   server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+27 verbose headers   'content-type': 'application/json',
+27 verbose headers   'cache-control': 'max-age=0',
+27 verbose headers   'content-length': '52',
+27 verbose headers   'accept-ranges': 'bytes',
+27 verbose headers   via: '1.1 varnish',
+27 verbose headers   age: '0',
+27 verbose headers   'x-served-by': 'cache-lax1422-LAX',
+27 verbose headers   'x-cache': 'MISS',
+27 verbose headers   'x-cache-hits': '0',
+27 verbose headers   'x-timer': 'S1423762093.566841,VS0,VE44',
+27 verbose headers   'keep-alive': 'timeout=10, max=50',
+27 verbose headers   connection: 'Keep-Alive' }
+28 silly registry.get cb [ 404,
+28 silly registry.get   { date: 'Thu, 12 Feb 2015 17:28:13 GMT',
+28 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+28 silly registry.get     'content-type': 'application/json',
+28 silly registry.get     'cache-control': 'max-age=0',
+28 silly registry.get     'content-length': '52',
+28 silly registry.get     'accept-ranges': 'bytes',
+28 silly registry.get     via: '1.1 varnish',
+28 silly registry.get     age: '0',
+28 silly registry.get     'x-served-by': 'cache-lax1422-LAX',
+28 silly registry.get     'x-cache': 'MISS',
+28 silly registry.get     'x-cache-hits': '0',
+28 silly registry.get     'x-timer': 'S1423762093.566841,VS0,VE44',
+28 silly registry.get     'keep-alive': 'timeout=10, max=50',
+28 silly registry.get     connection: 'Keep-Alive' } ]
+29 silly lockFile 0a906b12-chaihttp chaihttp@
+30 silly lockFile 0a906b12-chaihttp chaihttp@
+31 error 404 404 Not Found: chaihttp
+31 error 404
+31 error 404 'chaihttp' is not in the npm registry.
+31 error 404 You should bug the author to publish it
+31 error 404 It was specified as a dependency of 'CFJSA_Feb16_HTTP_Srvr_with_smpl_prsstnc'
+31 error 404
+31 error 404 Note that you can also install from a
+31 error 404 tarball, folder, or http url, or git url.
+32 error System Linux 3.13.0-45-generic
+33 error command "/home/art/.node/bin/node" "/home/art/.node/bin/npm" "install" "--save-dev" "chaihttp"
+34 error cwd /home/art/acceleratorJavaScript/projects/CFJSA_Feb16_HTTP_Srvr_with_smpl_prsstnc
+35 error node -v v0.10.35
+36 error npm -v 1.4.28
+37 error code E404
+38 verbose exit [ 1, true ]
